@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card {
+    max-width: 319px;
+    height: 539px;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    margin-top: 8.5%;
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset -1px 3px 8px 5px #0c1729, 2px 3px 10px 0px #0c1729, 5px 5px 7px 7px #0c1729); 
+box-shadow: inset -1px 3px 8px 9px #0c1729, 2px 9px 3px 10px #0c1729, 8px 5px 3px 2px #0c1729; */
+    box-shadow: -18px -14px 19px 0px #0c1729;
+}
+
+.card-header{
+    text-align:center;
+    position: relative;
+}
+.card-header .image {
+  height: 272px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 22px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+.card-header .svg {
+  width: 35px;
+  height: 35px;
+  
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 272px;
+  width: 272px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 255, 247, 0.4);
+}
+.card-header:hover .overlay {
+  opacity: 1;
+}
+
+.card-header:hover .image {
+  opacity: 0.7;
+  
+}
+
+.card-header:hover .middle {
+  opacity: 1;
+}
+
+.card-content {
+  width: 272px;
+  margin: auto;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 26px;
+}
+h2:hover, .card-footer span:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card-content p {
+  color: #738aa9;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+ul {
+  list-style: none;
+  margin-top: 26px;
+  padding-bottom: 43px;
+  border-bottom:  .75px solid #738aa9;
+  
+}
+
+
+li:first-child {
+  float: left;
+  color: hsl(178, 100%, 50%);
+}
+li:nth-child(2) {
+  float: right;
+  color: #738aa9;
+}
+
+.card-footer .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card-footer p {
+  color: #738aa9;
+}
+.card-footer span{
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.card-footer img {
+  width: 25px;
+  height: 25px;
+  margin-top: 9px;
+  margin-right: 10px;
+  border: 1.5px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.container {
+  width: 272px;
+  margin: auto;
+}
+
+@media screen and (max-width: 375px){
+  .card {
+    margin-top: 15%;
+  }
+}
