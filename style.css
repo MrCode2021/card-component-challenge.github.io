@@ -20,11 +20,11 @@ box-shadow: inset -1px 3px 8px 9px #0c1729, 2px 9px 3px 10px #0c1729, 8px 5px 3p
     box-shadow: -18px -14px 19px 0px #0c1729;
 }
 
-.card-header{
+header{
     text-align:center;
     position: relative;
 }
-.card-header .image {
+header .image {
   height: 272px;
   border-radius: 10px;
   cursor: pointer;
@@ -33,7 +33,7 @@ box-shadow: inset -1px 3px 8px 9px #0c1729, 2px 9px 3px 10px #0c1729, 8px 5px 3p
   backface-visibility: hidden;
   
 }
-.card-header .svg {
+header .svg {
   width: 35px;
   height: 35px;
   
@@ -63,16 +63,16 @@ box-shadow: inset -1px 3px 8px 9px #0c1729, 2px 9px 3px 10px #0c1729, 8px 5px 3p
   transition: 0.5s ease;
   background: rgba(0, 255, 247, 0.4);
 }
-.card-header:hover .overlay {
+header:hover .overlay {
   opacity: 1;
 }
 
-.card-header:hover .image {
+header:hover .image {
   opacity: 0.7;
   
 }
 
-.card-header:hover .middle {
+header:hover .middle {
   opacity: 1;
 }
 
@@ -86,7 +86,7 @@ h2 {
   cursor: pointer;
   margin-top: 26px;
 }
-h2:hover, .card-footer span:hover {
+h2:hover, footer span:hover {
   color: hsl(178, 100%, 50%);
 }
 .card-content p {
@@ -113,20 +113,20 @@ li:nth-child(2) {
   color: #738aa9;
 }
 
-.card-footer .container {
+footer .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.card-footer p {
+footer p {
   color: #738aa9;
 }
-.card-footer span{
+footer span{
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
 
-.card-footer img {
+footer img {
   width: 25px;
   height: 25px;
   margin-top: 9px;
