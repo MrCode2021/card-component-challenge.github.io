@@ -89,7 +89,7 @@ h1 {
 h1:hover, footer span:hover {
   color: hsl(178, 100%, 50%);
 }
-.card-content p {
+main p {
   color: #738aa9;
   font-size: 15px;
   font-weight: 300;
